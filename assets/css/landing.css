@@ -1,0 +1,144 @@
+/*
+  Theme Name: TheEvent
+  Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  Author: BootstrapMade.com
+  License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+* {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+}
+
+a {
+	color: #f82249;
+	transition: 0.5s;
+}
+
+
+a:hover,
+a:active,
+a:focus {
+	color: #f8234a;
+	outline: none;
+	text-decoration: none;
+}
+
+
+/* Mobile Nav body classes */
+
+body.mobile-nav-active {
+	overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+	left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+	color: #fff;
+}
+
+/*--------------------------------------------------------------
+# supporters Section
+--------------------------------------------------------------*/
+
+#supporters {
+	width: 100%;
+	height: 100%;
+}
+
+#supporters .screen {
+	position: relative;
+	flex-grow: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	transition: 1s;
+}
+
+#supporters #eo {
+	background: url("../img/event.png") top center no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#supporters #dj {
+	background: url("../img/dj.png") top center no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#supporters:hover .screen {
+	opacity: 0.5;
+}
+
+#supporters .screen:hover {
+	flex-grow: 4;
+	opacity: 1;
+}
+
+#supporters .screen .content {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	padding: 1.5%;
+	transform: translate(100%);
+	transition: 0.5s;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10%;
+}
+
+#supporters .screen .content:hover {
+	transform: scale(0.8);
+	transform: translate(0%);
+	color: white;
+}
+
+#supporters .screen:hover .content {
+	margin-right: 0%;
+	transform: translate(0);
+	transition-delay: 0.5s;
+	border-radius: 100%;
+	border: solid white;
+	box-shadow: 0 20px 55px rgba(0, 0, 0, 0.14), 0 15px 35px rgba(0, 0, 0, 0.14);
+}
+
+#supporters .screen .content h2 {
+	margin-top: 62px;
+	text-transform: uppercase;
+	font-size: 25px;
+	color: white;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+}
+
+/*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
+
+@media (max-width: 800px) {
+	.screen {
+		height: 50%;
+	}
+}
+
+@media (min-height: 1300px){
+	.screen {
+		height: 50%;
+	}
+}

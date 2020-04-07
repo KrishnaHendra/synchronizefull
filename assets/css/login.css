@@ -1,0 +1,189 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: montserrat;
+	box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(../img/login-bg.jpg);
+    position: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-form {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.767);
+	height: 390px;
+	padding: 30px 40px;
+	border-radius: 6px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 10px 10px rgba(#333, 0.1);
+}
+
+.login-form h2 {
+	text-align: center;
+	margin-bottom: 25px;
+	color: #333;
+}
+
+.txtb {
+	border-bottom: 2px solid #777;
+	position: relative;
+	margin: 30px 0;
+}
+
+.txtb input {
+	font-size: 16px;
+	color: #333;
+	border: none;
+	width: 100%;
+	outline: none;
+	background: none;
+	padding: 0 5px;
+	height: 40px;
+}
+
+.txtb span::before {
+	content: attr(data-placeholder);
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	color: #777;
+	transform: translateY(-50%);
+	z-index: -1;
+	transition: .5s;
+}
+
+.txtb span::after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background: linear-gradient(120deg, #3598DB, #745DC5);
+	transition: .5s;
+	left: 0%;
+	top: 100%;
+
+
+
+}
+
+.focus+span::before {
+	top: -5px;
+}
+
+.focus+span::after {
+	width: 100%;
+}
+
+.logbtn {
+	display: block;
+	width: 100%;
+	height: 50px;
+	border: none;
+	font-size: 16px;
+	background: linear-gradient(120deg, #3598DB, #745DC5, #3598DB);
+	background-size: 200%;
+	color: #f1f1f1;
+	outline: none;
+	cursor: pointer;
+	transition: .5s;
+	text-transform: capitalize;
+}
+
+.logbtn:hover {
+	background-position: right;
+}
+
+.bottom-text {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 14px;
+}
+
+#intro {
+	width: 100%;
+	height: 100vh;
+	background: url(../img/login-bg.jpg) top center;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  #intro:before {
+	content: "";
+	background: rgba(6, 12, 34, 0.8);
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+  }
+  
+  #intro .intro-container {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	top: 0px;
+	right: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	text-align: center;
+	padding: 0 15px;
+  }
+  
+  #intro h2 {
+	color: #745DC5;
+	font-family: "Raleway", sans-serif;
+	font-size: 56px;
+	font-weight: 600;
+	text-transform: uppercase;
+  }
+  
+  @-webkit-keyframes pulsate-btn {
+	0% {
+	  -webkit-transform: scale(0.6, 0.6);
+	  transform: scale(0.6, 0.6);
+	  opacity: 1;
+	}
+  
+	100% {
+	  -webkit-transform: scale(1, 1);
+	  transform: scale(1, 1);
+	  opacity: 0;
+	}
+  }
+  
+  @keyframes pulsate-btn {
+	0% {
+	  -webkit-transform: scale(0.6, 0.6);
+	  transform: scale(0.6, 0.6);
+	  opacity: 1;
+	}
+  
+	100% {
+	  -webkit-transform: scale(1, 1);
+	  transform: scale(1, 1);
+	  opacity: 0;
+	}
+  }
